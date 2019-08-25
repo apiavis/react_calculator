@@ -1,0 +1,213 @@
+body {
+  text-align: center;
+}
+
+button {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: 1px solid white;
+} 
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  background-color: #44BFBC;
+  font-size: 2rem;
+  color: whitesmoke;
+  padding: 1rem 4rem;
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+.nav ul li{
+	display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.nav ul li:hover{
+	color: #696863;
+}
+
+.calculator {
+  height: 30rem;
+  padding-top: 4rem;
+  margin: auto;
+  width: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'display display display display'
+    'display display display display'
+    'ac plusMinus percent divide'
+    'seven eight nine multiply'
+    'four five six subtract'
+    'one two three add'
+    'zero zero decimal equals';
+}
+
+.calculator-btn {
+  color: #2B2D2F;
+  background-color: #D3D3D3;
+  border: 1px solid #777777;
+}
+
+.btn-ac {
+  grid-area: ac;
+  background-color: #bbbbbb;
+}
+
+.btn-plus-minus {
+  grid-area: plusMinus;
+  background-color: #bbbbbb;
+}
+
+.btn-percent {
+  grid-area: percent;
+  background-color: #bbbbbb;
+}
+
+.btn-divide {
+  grid-area: divide;
+  background-color: #FFAC26;
+  color: white;
+}
+
+.btn-multiply {
+  grid-area: multiply;
+  background-color: #FFAC26;
+  color: white;
+}
+
+.btn-subtract {
+  grid-area: subtract;
+  background-color: #FFAC26;
+  color: white;
+}
+
+.btn-add {
+  grid-area: add;
+  background-color: #FFAC26;
+  color: white;
+}
+
+.btn-one {
+  grid-area: one;
+}
+
+.btn-two {
+  grid-area: two;
+}
+
+.btn-three {
+  grid-area: three;
+}
+
+.btn-four {
+  grid-area: four;
+}
+
+.btn-five {
+  grid-area: five;
+}
+
+.btn-six {
+  grid-area: six;
+}
+
+.btn-seven {
+  grid-area: seven;
+}
+
+.btn-eight {
+  grid-area: eight;
+}
+
+.btn-nine {
+  grid-area: nine;
+}
+
+.btn-zero {
+  grid-area: zero;
+  text-align: left;
+  padding-left: 2.5rem;
+}
+
+.btn-decimal {
+  grid-area: decimal;
+}
+
+.btn-equals {
+  grid-area: equals;
+  background-color: #FFAC26; 
+  color: white;
+}
+
+.calculator-display {
+  font-weight: 200;
+  grid-area: display;
+  background-color: black;
+  text-align: right;
+  padding-top: 2rem;
+  color: white;
+  padding-right: 1rem;
+}
+
+.calculator-display p {
+  margin: 1rem;
+  font-size: 5rem;
+}
+
+.calculator-btn:hover {
+  background-color: #aaaaaa;
+}
+
+.btn-orange:hover {
+  background-color: #FFA12B; 
+}
+
+.home {
+  padding-top: 10rem;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about {
+  padding: 2rem 0;
+  width: 40%;
+  margin: auto;
+}
+
+.performCalc {
+  border: 1px solid rgb(255, 143, 7);
+  border-radius: 30px;
+  color: whitesmoke;
+  background-color: #FFAC26;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+.performCalc:hover {
+  color: #FFAC26;
+  background-color: white;
+}
